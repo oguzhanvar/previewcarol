@@ -1,0 +1,519 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&family=Urbanist:wght@300&display=swap');
+
+      /* Reset some default styles */
+      body, ul, li {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          font-family: 'Urbanist', sans-serif;
+      }
+
+      video{
+        top: 0px;
+      }
+      /* Style for the navigation bar */
+      .navbar {
+          background-color: #fff; /* Background color for the navbar */
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+          z-index: 2;
+      }
+
+      /* Style for the logo */
+      .logo {
+          width: 50px;
+          height: 50px;
+      }
+
+      .logo img{
+          z-index: 134;
+          cursor: pointer;
+          position: absolute;
+          top: -40px;
+      }
+
+      /* Style for the navigation links */
+      .navbar ul {
+          display: flex;
+      }
+
+      .navbar li {
+          position: relative;
+      }
+
+      .navbar a {
+          text-decoration: none;
+          color: #50C878; /* Link color */
+          position: relative;
+      }
+
+      .navbar a:hover {
+          text-decoration: none;
+      }
+
+      .navbar a::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 100%; /* Initially, the line is from left to right */
+      bottom: -2px;
+      height: 1px;
+      background-color: #50C878; /* Underline color */
+      transition: right 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .navbar a:hover::before {
+      right: 0; /* On hover, the line goes from right to left */
+  }
+      /* Style for the contact link */
+      .contact-link::before{
+          background-color: white !important;
+      }
+      .contact-link {
+          background-color: #50C878; /* Background color for the contact link */
+          color: white !important; /* Text color for the contact link */
+          padding: 15px 20px;
+          margin-left: 20px; /* Adjust the margin as needed */
+          text-decoration: none;
+          border: 1px solid #50C878;
+          transition: 0.5s;
+      }
+
+          .contact-link:hover{
+          background-color: white;
+          color: #50C878 !important;
+          }
+      
+      /* Margin for the links to the left of the logo */
+      .link-group {
+          margin-left: -250px; /* Margin to the logo */
+      }
+
+      .link-group li:not(:last-child) {
+          margin-right: 50px; /* Margin between links */
+      }
+
+       /* Style for the green area */
+       .green-area {
+            position: absolute;
+            top: 70px;
+          background-color: #50C878 ;
+          width: 100%;
+          height: 123%;
+          justify-content: center;
+          align-items: center;
+      }
+
+      /* Style for the copy */
+      .copy {
+          position: absolute;
+          color: white;
+          font-family: 'Urbanist', sans-serif;
+          font-size: 35px;
+          text-align: center;
+          margin-top: -750px;
+      }
+
+      .copy p{
+        font-size: 22px;
+      }
+
+      .consultation-container{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top:-380px;
+      }
+
+      /* Style for the "Request a Consultation" link */
+      .consultation-link {
+            position: relative;
+          background-color: white;
+          color: #50C878 ;
+          padding: 15px 20px;
+          text-decoration: none;
+          font-family: 'Urbanist', sans-serif;
+          font-size: 20px;
+          margin-top: 0px;
+          transition: 0.5s;
+      }
+
+      .consultation-link:hover{
+          background-color: #50C878 ;
+          color: white;
+      }
+ /* Style for the "About Us" section */
+      
+ 
+      .about-us {
+           margin-top: 1000px;
+          background-color: #50C878;
+          text-align: center;
+          color: white;
+          padding: 50px 0;
+      }
+
+      /* Style for the title "About Us" */
+      .about-title {
+          font-size: 36px;
+          margin-top: -20px;
+          margin-bottom: 50px;
+      }
+
+      /* Style for the about image */
+      .about-image {
+          max-width: 100%;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 60px;
+      }
+
+      /* Style for the "Learn more" link */
+      .learn-more-link {
+          margin-top: 100px;
+          color: #50C878;
+          text-decoration: none;
+          padding: 10px 20px;
+          background-color: white;
+          font-size: 18px;
+          border: 1px solid white;
+          transition: 0.5s;
+      }
+
+      .learn-more-link:hover{
+          background-color: #50C878;
+          color: white;
+      }
+
+      .about-us p{
+          margin-bottom: 60px;
+      }
+
+      .why-us {
+          margin-top: 300px;
+          background-color: #50C878;
+          text-align: center;
+          color: white;
+          padding: 50px 0;
+      }
+
+      /* Style for the "Why Us" title */
+      .why-us-title {
+          font-size: 36px;
+          margin-top: -30px;
+          margin-bottom: 40px;
+      }
+
+      /* Style for the boxes container */
+      .box-container {
+          display: flex;
+          justify-content: space-around;
+          align-items: flex-start;
+      }
+
+      /* Style for each box */
+      .box {
+          background-color: #50C878;
+          padding: 20px;
+          text-align: center;
+          flex-basis: calc(33.33% - 40px); /* Adjust for margin space */
+      }
+
+      /* Style for the title inside the box */
+      .box-title {
+          font-size: 24px;
+          margin-bottom: 10px;
+      }
+
+      /* Style for the text inside the box */
+      .box-text {
+          font-size: 18px;
+      }
+
+
+      .testimonials {
+          margin-top: 300px;
+          text-align: center;
+          color: white;
+          padding: 50px 0;
+      }
+
+      /* Style for the "Testimonials" title */
+      .testimonials-title {
+          font-size: 36px;
+          margin-bottom: 20px;
+          color: #50C878;
+      }
+
+      /* Style for the testimonial boxes */
+      .testimonial-box {
+          background-color: #50C878;
+          padding: 20px;
+          text-align: center;
+          margin-bottom: 20px;
+      }
+
+      /* Style for the testimonial images */
+      .testimonial-image {
+          max-width: 100%;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+      }
+
+      /* Style for the testimonial text */
+      .testimonial-text {
+          font-size: 18px;
+          text-align: center;
+      }
+
+      .testimonials a{
+        color: white;
+        background-color: #50C878;
+        padding: 10px 20px;
+        text-decoration: none;
+        border: 1px solid #50C878;
+        transition: 0.5s;
+    }
+
+      .testimonials a:hover{
+        background-color: white;
+        color: #50C878;
+      }
+      .contact-form {
+          margin-top: 200px;
+          background-color: whitesmoke;
+          padding-top: 30px;
+          text-align: center;
+          color: #50C878;
+          
+      }
+
+      /* Style for the contact form title */
+      .contact-form-title {
+          font-size: 36px;
+          margin-bottom: 20px;
+   
+      }
+
+      /* Style for the contact form */
+      .form-container {
+          max-width: 600px;
+          margin: 0 auto;
+          
+
+      }
+
+      .form-group {
+          margin-bottom: 20px;
+      }
+
+      .form-group label {
+          display: block;
+          font-size: 18px;
+          margin-bottom: 10px;
+      }
+
+      .form-group input[type="text"],
+      .form-group input[type="email"],
+      .form-group input[type="tel"],
+      .form-group textarea {
+          width: 70%;
+          padding: 10px;
+          border: none;
+          outline: none;
+          border: 1px solid #50C878;
+          transition: 0.5s;
+          color: #50C878;
+          font-family: 'Urbanist', sans-serif;
+      }
+
+
+      .form-group input:focus,
+      .form-group textarea:focus{
+          background-color: #50C878;
+          color: white;
+      }
+
+      .form-group textarea {
+          resize: vertical;
+          height: 200px;
+          width: 90%;
+      }
+
+      /* Style for the submit button */
+      .submit-button {
+          background-color: #50C878;
+          color: white;
+          padding: 15px 40px;
+          border: none;
+          font-family: 'Urbanist', sans-serif;
+          font-size: 18px;
+          cursor: pointer;
+          border: 1px solid #50C878;
+          transition: 0.5s;
+      }
+
+      .submit-button:hover{
+          background-color: white;
+          color: #50C878;
+      }
+
+
+      
+      /* Style for the footer */
+      .footer {
+          background-color: #50C878;
+          color: white;
+          padding: 20px 0;
+          text-align: center;
+          height:500px;
+          margin-top: 200px;
+      }
+
+      /* Style for the footer logo */
+      .footer-logo {
+          width: 50px;
+          height: 50px;
+          float: left;
+          margin-top: -70px;
+      }
+
+      /* Style for the footer iframe */
+      .footer-iframe {
+          float: left;
+          margin-left: 0px;
+          margin-top: 220px;
+          height: 300px;
+          width: 600px;
+      }
+
+      /* Style for the footer phone and email */
+      .footer-contact {
+          float: left;
+          margin-right: 20px;
+      }
+
+      .footer-contact a{
+          text-decoration: none;
+          color: white;
+       
+      }
+
+      .footer-contact .icon {
+          margin-right: 5px;
+          padding-top: 10px;
+      }
+
+      /* Style for the footer links */
+      .footer-links {
+          margin-top: 120px;
+          float: right;
+      }
+
+      .footer-links ul {
+          list-style: none;
+          padding: 0;
+      }
+
+      .footer-links li {
+          margin-right: 30px;
+          margin-bottom: 40px;
+      }
+
+      /* Style for the footer links (hover effect) */
+      .footer-links a {
+          color: white;
+          text-decoration: none;
+      }
+
+      .footer-links a:hover {
+          text-decoration: underline;
+      }
+
+
+      .menuicon{
+        display: none;
+        cursor: pointer;
+      }
+      
+
+@media screen and (max-width:600px) {
+    
+    .menuicon{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+      }
+    
+    .navbar a{
+        display: none;
+    }
+
+    .box-container{
+        display: inline;
+    }
+
+.footer-contact{
+    margin-top: -420px;
+    text-align: left;
+    
+}
+
+
+.footer-iframe{
+    margin-top: 520px;
+}
+
+.footer-links{
+    margin-top: -690px;
+    float:left;
+    text-align: left;
+   
+}
+
+
+}
+
+
+.mobilemenu{
+position: absolute;
+    width: 100%;
+    height:0%;
+    overflow: hidden;
+    background-color: #50C878;
+    z-index: 9223;
+    background-color: rgba(80, 200, 120, 0.8);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 1s;
+
+}
+.mobilecontent{
+    margin-top: 5%;
+}
+.mobilecontent ul{
+    margin-top: -20px;
+}
+.mobilecontent a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    margin-bottom:50px;
+    font-size: 20px;
+}
+
+.mobilecontent li{
+
+    padding: 5px;
+    margin-bottom:10px ;
+}
+
+

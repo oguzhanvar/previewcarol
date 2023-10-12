@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="menuicon">
+        <img src="menuicon.png" alt="" width="50px" onclick="menuopen()">
+        </div>
+        <script>
+ 
+            function menuopen() {
+           document.getElementById("menu").style.height="100%";
+               
+            }
+           function closethemenu() {
+               document.getElementById("menu").style.height="0%";
+           
+           }
+           
+           </script>
+           </div>
+           
+           
+           
+               <div class="mobilemenu" id="menu">
+                   <div class="mobilecontent">
+                       <img src="closeicon.png" alt="" onclick="closethemenu()" id="closeicon" width="30px" style="cursor: pointer;">
+                       <h1 style="color:white; border-bottom: 2px solid white;     font-family: 'Urbanist', sans-serif;">The Menu</h1>
+                       <ul>
+                        <li><a href="/previewcarol/index.html">Home</a></li>
+                           <li><a href="practiceareas.html">Practice areas</a></li>
+                           <li><a href="testimonials.html">Testimonials</a></li>
+                           <li><a href="resources.html">Resources</a></li>
+                           <li><a href="about.html">About Us</a></li>
+                           <li><a href="contact.html">Contact</a></li>
+                           <li><a href="mailto:">example@example.com</a></li>
+                           <li><a href="tel:">+17023841111</a></li>
+                           <li><a href="https://www.google.com/maps/place/Law+Offices+Of+Carol+Menninger/@36.1594256,-115.187843,17z/data=!3m1!4b1!4m6!3m5!1s0x80c8c3e0f1f3797f:0xe9471b8927b99794!8m2!3d36.1594213!4d-115.1852627!16s%2Fg%2F11b5pk14fb?entry=ttu">3210 W Charleston Blvd, Las Vegas, NV 89102, United States</a></li>
+                       </ul>
+                   </div>
+               </div>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&family=Urbanist:wght@300&display=swap');
+
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Urbanist', sans-serif;
+
+    }
+    .menuicon{
+        display: none;
+        cursor: pointer;
+      }
+       .green-area {
+        margin-top: 50px;
+          background-color: #50C878 ;
+          margin-bottom: 300px;
+          width: 100%;
+          height: 550px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+
+      /* Style for the copy */
+      .copy {
+          position: absolute;
+          color: white;
+          font-family: 'Urbanist', sans-serif;
+          font-size: 50px;
+          text-align: center;
+          margin-top: -50px;
+      }
+
+      /* Style for the "Request a Consultation" link */
+      .consultation-link {
+          position: absolute;
+          background-color: white;
+          color: #50C878 ;
+          padding: 15px 20px;
+          text-decoration: none;
+          font-family: 'Urbanist', sans-serif;
+          font-size: 20px;
+          margin-top: 200px;
+          transition: 0.5s;
+      }
+
+      .consultation-link:hover{
+          background-color: #50C878 ;
+          color: white;
+      }
+
+
+      .mobilemenu{
+position: absolute;
+    width: 100%;
+    height:0%;
+    overflow: hidden;
+    background-color: #50C878;
+    z-index: 9223;
+    background-color: rgba(80, 200, 120, 0.7);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 1s;
+
+}
+.mobilecontent{
+    margin-top: 5%;
+}
+.mobilecontent ul{
+    margin-top: -20px;
+}
+.mobilecontent a{
+    margin-top: -20px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    margin-bottom:50px;
+    font-size: 20px;
+}
+
+.mobilecontent li{
+
+    padding: 5px;
+    margin-bottom:10px ;
+}
+
+
+
+      /* Reset some default styles */
+      body, ul, li {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          font-family: 'Urbanist', sans-serif;
+      }
+
+      /* Style for the navigation bar */
+      .navbar {
+          background-color: #fff; /* Background color for the navbar */
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+          z-index: 2;
+          font-family: 'Urbanist', sans-serif;
+      }
+
+      /* Style for the logo */
+      .logo {
+          width: 50px;
+          height: 50px;
+      }
+
+      .logo img{
+          z-index: 134;
+          cursor: pointer;
+          position: absolute;
+          top: -40px;
+      }
+
+      /* Style for the navigation links */
+      .navbar ul {
+          display: flex;
+      }
+
+      .navbar li {
+          position: relative;
+      }
+
+      .navbar a {
+          text-decoration: none;
+          color: #50C878; /* Link color */
+          position: relative;
+      }
+
+      .navbar a:hover {
+          text-decoration: none;
+      }
+
+      .navbar a::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 100%; /* Initially, the line is from left to right */
+      bottom: -2px;
+      height: 1px;
+      background-color: #50C878; /* Underline color */
+      transition: right 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .navbar a:hover::before {
+      right: 0; /* On hover, the line goes from right to left */
+  }
+      /* Style for the contact link */
+      .contact-link::before{
+          background-color: white !important;
+      }
+      .contact-link {
+          background-color: #50C878; /* Background color for the contact link */
+          color: white !important; /* Text color for the contact link */
+          padding: 15px 20px;
+          margin-left: 20px; /* Adjust the margin as needed */
+          text-decoration: none;
+          border: 1px solid #50C878;
+          transition: 0.5s;
+      }
+
+          .contact-link:hover{
+          background-color: white;
+          color: #50C878 !important;
+          }
+      
+      /* Margin for the links to the left of the logo */
+      .link-group {
+          margin-left: -250px; /* Margin to the logo */
+      }
+
+      .link-group li:not(:last-child) {
+          margin-right: 50px; /* Margin between links */
+      }
+</style>
+
+
+    
+
+
+
+
+        <style>
+                body {
+                    font-family: Arial, sans-serif;
+                }
+        
+                .practice-area-box {
+                    width: 100%;
+                    height: 600px;
+                    margin-bottom: 100px;
+                    background-color: #50C878;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-image: url('background-image.jpg'); /* Replace 'background-image.jpg' with your image path */
+                    background-size: cover;
+                    background-position: center;
+                    text-align: center;
+                    color: white;
+                    font-family: 'Urbanist', sans-serif;
+                }
+        
+                .practice-area-title {
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+        
+                .practice-area-text {
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                    line-height: 1.5;
+                }
+        
+                .practice-area-button {
+                    background-color:white;
+                    color: #50C878;
+                    font-size: 18px;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    border: none;
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+        
+                .practice-area-button:hover {
+                    background-color: #50C878;
+                    color: white; /* Darker shade of green for hover effect */
+                }
+
+
+
+
+                   
+      /* Style for the footer */
+      .footer {
+          background-color: #50C878;
+          color: white;
+          padding: 20px 0;
+          text-align: center;
+          height:500px;
+          margin-top: 200px;
+          font-family: 'Urbanist', sans-serif;
+      }
+
+      /* Style for the footer logo */
+      .footer-logo {
+          width: 50px;
+          height: 50px;
+          float: left;
+          margin-top: -70px;
+      }
+
+      /* Style for the footer iframe */
+      .footer-iframe {
+          float: left;
+          margin-left: 0px;
+          margin-top: 220px;
+          height: 300px;
+          width: 600px;
+      }
+
+      /* Style for the footer phone and email */
+      .footer-contact {
+          float: left;
+          margin-right: 20px;
+      }
+
+      .footer-contact a{
+          text-decoration: none;
+          color: white;
+       
+      }
+
+      .footer-contact .icon {
+          margin-right: 5px;
+          padding-top: 10px;
+      }
+
+      /* Style for the footer links */
+      .footer-links {
+          margin-top: 120px;
+          float: right;
+      }
+
+      .footer-links ul {
+          list-style: none;
+          padding: 0;
+      }
+
+      .footer-links li {
+          margin-right: 30px;
+          margin-bottom: 40px;
+      }
+
+      /* Style for the footer links (hover effect) */
+      .footer-links a {
+          color: white;
+          text-decoration: none;
+      }
+
+      .footer-links a:hover {
+          text-decoration: underline;
+      }
+      
+      #divorce{
+        background-image: url(divorce.png);
+      }
+
+      #custody{
+        background-image: url(custody.png);
+      }
+
+      #division{
+        background-image: url(division.png);
+      }
+
+
+            </style>
+        </head>
+        <body>
+
+            <div class="navbar">
+                <div class="logo">
+                    <img src="green-logo.png" alt="Logo" width="150px" onclick="location.href='index.html'" >
+                </div>
+                <ul class="link-group">
+                    <li><a href="practiceareas.html">Practice Areas</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <a class="contact-link" href="contact.html">Contact</a>
+            </div>
+        
+
+
+
+            <div class="thepracticeareas">
+                <img src="green-logo-small.png" alt="anan" width="250px" class="titlelogo">
+                <h1>Our Practice Areas</h1>
+                <p>"Explore Our Diverse Practice Areas for Comprehensive Legal Solutions."</p>
+                <img src="downarrow.png" alt="down" width="70px"id="down">
+            </div>
+
+
+<style>
+    .thepracticeareas{
+        justify-content: center;
+        text-align: center;
+        color: #50C878;
+        font-family: 'Urbanist', sans-serif;
+        margin-bottom: 250px;
+        margin-top: 60px;
+    }
+
+    .thepracticeareas h1{
+        font-size: 62px;
+        margin-top: 0px;
+        text-shadow: 1px;
+    }
+    .thepracticeareas p{
+        font-size: 20px;
+        margin-bottom: 142px;
+    }
+    @media screen and (max-width:600px) {
+        #divorce{
+            background-image: url("mobile-divorce.png");
+        }
+        .titlelogo{
+            width: 120px;
+        }
+        .thepracticeareas p{
+        font-size: 20px;
+        margin-bottom:30px;
+    }
+
+      }
+
+      @media screen and (max-width:600px) {
+    
+    .menuicon{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+      }
+    
+    .navbar a{
+        display: none;
+    }
+
+    .box-container{
+        display: inline;
+    }
+
+.footer-contact{
+    margin-top: -420px;
+    text-align: left;
+    
+}
+
+
+.footer-iframe{
+    margin-top: 520px;
+}
+
+.footer-links{
+    margin-top: -690px;
+    float:left;
+    text-align: left;
+   
+}
+
+
+}
+</style>
+
+
+            <div class="practice-area-box" id="divorce">
+                <div class="practice-area-title" >Divorce</div>
+                <div class="practice-area-text">
+                    When going through a divorce, it's crucial to have legal guidance that understands the emotional and financial challenges you face. Our team is dedicated to helping you navigate this difficult process.
+                </div>
+                <a href="practiceareas/divorce.html" class="practice-area-button">Learn More</a>
+            </div>
+        
+            <div class="practice-area-box" id="custody">
+                <div class="practice-area-title" >Child Custody</div>
+                <div class="practice-area-text">
+                    Child custody disputes can be emotionally taxing. We are committed to ensuring the best interests of your child are protected and will work to find amicable solutions for your family.
+                </div>
+                <a href="practiceareas/childcustody.html" class="practice-area-button">Learn More</a>
+            </div>
+        
+            <div class="practice-area-box" id="division">
+                <div class="practice-area-title">Property Division</div>
+                <div class="practice-area-text">
+                    Property division can be complex. We'll strive to negotiate a fair distribution of assets, safeguarding your financial future and ensuring you receive your fair share of marital property.
+                </div>
+                <a href="practiceareas/propertydivision.html" class="practice-area-button">Learn More</a>
+            </div>
+           
+
+
+
+
+            
+            <div class="footer">
+                <div class="footer-logo">
+                    <img src="white-logo.png" alt="Logo" width="250px">
+                </div>
+                <div class="footer-content">
+                    <iframe class="footer-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.2929370496495!2d-115.18784298962836!3d36.15942560344437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c3e0f1f3797f%3A0xe9471b8927b99794!2sLaw%20Offices%20Of%20Carol%20Menninger!5e0!3m2!1sen!2str!4v1696091393061!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <div class="footer-contact">
+                        <div>
+                            <img class="icon" src="phone-icon.png" alt="Phone Icon" width="30px" >
+                            <a href="tel:+17023841111" style="margin-top:-10px;">+17023841111</a>
+                        </div>
+                        <div>
+                            <img class="icon" src="email-icon.png" alt="Email Icon" width="30px">
+                            <a href="mailto:example@example.com">example@example.com</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="practiceareas.html">Practice Areas</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+        </body>
+        </html>
+        
+
+
+</body>
+</html>

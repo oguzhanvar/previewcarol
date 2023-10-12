@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="menuicon">
+<img src="menuicon.png" alt="" width="50px"  onclick="menuopen()">
+
+<script>
+ 
+ function menuopen() {
+document.getElementById("menu").style.height="100%";
+    
+ }
+function closethemenu() {
+    document.getElementById("menu").style.height="0%";
+
+}
+
+</script>
+</div>
+
+
+
+    <div class="mobilemenu" id="menu">
+        <div class="mobilecontent">
+            <img src="closeicon.png" alt="" onclick="closethemenu()" id="closeicon" width="30px" style="cursor: pointer;">
+            <h1 style="color:white; border-bottom: 2px solid white;">The Menu</h1>
+            <ul>
+                <li><a href="/previewcarol/index.html">Home</a></li>
+                <li><a href="practiceareas.html">Practice areas</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="mailto:">example@example.com</a></li>
+                <li><a href="tel:">+17023841111</a></li>
+                <li><a href="https://www.google.com/maps/place/Law+Offices+Of+Carol+Menninger/@36.1594256,-115.187843,17z/data=!3m1!4b1!4m6!3m5!1s0x80c8c3e0f1f3797f:0xe9471b8927b99794!8m2!3d36.1594213!4d-115.1852627!16s%2Fg%2F11b5pk14fb?entry=ttu">3210 W Charleston Blvd, Las Vegas, NV 89102, United States</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="green-logo.png" alt="Logo" width="150px" onclick="location.href='index.html'">
+        </div>
+        <ul class="link-group">
+            <li><a href="practiceareas.html">Practice Areas</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <a class="contact-link" href="contact.html">Contact</a>
+    </div>
+
+
+
+
+    <div class="green-area">
+    <video src="thebgvideo.mp4" width="100%" style="margin-top:0px; opacity:0.6;" autoplay loop muted id="bgVideo"></video>
+        <div class="copy">
+            <h1>"Compassionate Legal Support for Your Family Matters."</h1>
+            <p>At [Law Firm Name], we specialize in family law, offering expert guidance and support when you need it most. Our experienced team is dedicated to finding solutions for you.</p>
+        </div>
+        <div class="consultation-container">
+        <a class="consultation-link" href="#">Request a Consultation</a>
+        </div>
+    </div>
+<style>
+          @media screen and (max-width:600px) {
+            .navbar{
+                margin-bottom: 3px;
+            }
+            video{
+                top: 120px;
+            }
+
+       .green-area {
+          height: 475px;
+          display:inline-block;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+      }
+      .copy{
+        margin-top: -450px;
+        
+      }
+      .copy h1{
+        font-size: 30px;
+      }
+      .consultation-container{
+        margin-top: -120px;
+      }
+      .consultation-link{
+        position: relative;
+      }
+      .about-us{
+        margin-top: 650px;
+      }
+      }
+
+</style>
+    <div class="about-us">
+        <h2 class="about-title">About Us</h2>
+        <img class="about-image" src="lawyer.png" alt="About Us Image" width="400px">
+        <p>
+            About Us: Your Trusted Family Lawyer
+
+            At [Law Firm Name], we understand that family matters are close to the heart, and we are
+             dedicated to providing compassionate and expert legal support to help you navigate these 
+             sensitive issues. Our family law practice is built on the foundation of integrity, empathy, 
+             and unwavering commitment to our clients. <br>
+            
+            Our Team:
+            We are proud to have a team of experienced family lawyers who are not only well-versed in the 
+            complexities of family law but also genuinely care about the well-being of our clients. With years of
+             experience in handling a wide range of family-related legal matters, our attorneys have the knowledge 
+             and skills needed to guide you through challenging times. <br>
+            
+            Compassion and Understanding:
+            We know that family disputes can be emotionally challenging, and we approach each case with the utmost 
+            compassion and understanding. We take the time to listen to your concerns, answer your questions, and
+             provide you with a clear understanding of your legal options. Our goal is to empower you to make informed
+              decisions that are in the best interests of you and your loved ones. <br>
+            
+            Dedicated Legal Services:
+            Whether you are facing issues related to divorce, child custody, spousal support, adoption, or any other 
+            family law matter, we are here to provide you with dedicated legal representation. We will work diligently
+             to protect your rights and pursue a favorable resolution, whether through negotiation or litigation.
+            <br>
+            Tailored Solutions:
+            Every family is unique, and we believe that legal solutions should be tailored to the specific needs of
+             each client. Our attorneys will work closely with you to develop a personalized strategy that aligns with
+              your goals and objectives, ensuring that your voice is heard throughout the legal process.
+            <br>
+            Transparency and Communication:
+            We understand the importance of transparency and effective communication in the attorney-client relationship
+            . You can count on us to keep you informed about the progress of your case, answer your questions promptly
+            , and provide honest and realistic assessments of your situation.
+            <br>
+            At [Law Firm Name], we are not just your legal representatives; we are your advocates and allies during what
+             may be one of the most challenging times in your life. Trust us to provide you with the legal support you 
+             need to protect your family's future. Your peace of mind is our priority, and we are here to help you every
+              step of the way. <br>
+        </p>
+        <a class="learn-more-link" href="about.html">Learn more</a>
+    </div>
+
+
+
+    <div class="why-us">
+        <h2 class="why-us-title">Why Us</h2>
+        <div class="box-container">
+            <div class="box">
+                <h3 class="box-title">Experienced Team</h3>
+                <img src="experienced.png" alt="img" width="100px" >
+                <p class="box-text">
+                    Our team at [Law Firm Name] is known for our extensive experience and expertise. With a proven track record of handling various legal matters, our attorneys bring a wealth of knowledge to every case.
+                </p>
+            </div>
+            <div class="box">
+                <h3 class="box-title">Client-Centric Approach</h3>
+                <img src="client-centric.png" alt="img" width="100px" >
+                <p class="box-text">
+                    At [Law Firm Name], we prioritize our clients. Our client-centric approach ensures that your unique needs and concerns are heard and addressed. We provide personalized, compassionate service, making sure you're informed and comfortable throughout the legal process.
+                </p>
+            </div>
+            <div class="box">
+                <h3 class="box-title">Proven Track Record</h3>
+                <img src="proven-success.png" alt="img" width="100px" >
+                <p class="box-text">
+                    Our history of successful outcomes reflects our commitment and competence. We've consistently achieved favorable results for our clients in negotiations, settlements, and trials. When you choose us, you're choosing a law firm with a strong track record of delivering results.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="testimonials">
+        <h2 class="testimonials-title">Testimonials</h2>
+        <div class="testimonial-box">
+            <img class="testimonial-image" src="client.png" alt="Testimonial 1" width="150px">
+            <img class="testimonial-image" src="five-star-white.png" alt="Testimonial 2" width="150px">
+            <p class="testimonial-text">
+                "I can't express how grateful I am for the incredible legal representation I received from [Lawyer's Name].
+                 Their knowledge of the law, attention to detail, and dedication to my case were nothing short of amazing.
+                  They fought tirelessly for my rights and navigated the complexities of my legal matter with ease. Thanks
+                   to their expertise, I achieved a favorable outcome that I never thought possible. [Lawyer's Name] is not
+                    just an exceptional lawyer but also a true advocate for their clients.
+                 I highly recommend their services to anyone in need of legal help."
+            </p>
+        </div>
+        <div class="testimonial-box">
+            <img class="testimonial-image" src="client2.png" alt="Testimonial 3" width="150px">
+            <img class="testimonial-image" src="five-star-white.png" alt="Testimonial 2" width="150px">
+            <p class="testimonial-text">
+                "[Lawyer's Name] is an absolute legal superstar! Their dedication, professionalism, and unwavering 
+                support throughout my legal journey were remarkable. They took the time to explain every step of the
+                 process, ensuring I understood my options and felt comfortable with the decisions we made. Their 
+                 courtroom skills are truly impressive, and their ability to strategize and negotiate is unparalleled.
+                  Thanks to [Lawyer's Name], I achieved a successful resolution to my case. I couldn't have asked for
+                   a better lawyer, and I wholeheartedly endorse their services."
+            </p>
+        </div>
+        <div class="testimonial-box">
+            <img class="testimonial-image" src="client3.png" alt="Testimonial 5" width="150px">
+            <img class="testimonial-image" src="five-star-white.png" alt="Testimonial 2" width="150px">
+            <p class="testimonial-text">
+                "I had the privilege of working with [Lawyer's Name], and I can confidently say that they are an
+                exceptional lawyer. Their commitment to my case was extraordinary, and their depth of legal knowledge
+                was evident from the start. They were always available to answer my questions and address my concerns,
+                making me feel supported and informed throughout the legal process. [Lawyer's Name] is not only a
+                skilled attorney but also a compassionate and dedicated advocate. I'm extremely grateful for their
+                outstanding representation, and I highly recommend them to anyone seeking legal assistance."
+            </p>
+        </div>
+        <a href="testimonials.html">See More</a>
+
+    </div>
+
+
+
+
+
+
+    <div class="contact-form">
+        <h2 class="contact-form-title">Contact Us</h2>
+        <div class="form-container">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name-lastname">Name-Lastname</label>
+                    <input type="text" id="name-lastname" name="name-lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="when-to-contact">When should we get back to you? (optional)</label>
+                    <input type="text" id="when-to-contact" name="when-to-contact">
+                </div>
+                <div class="form-group">
+                    <label for="case">Case</label>
+                    <textarea id="case" name="case" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="white-logo.png" alt="Logo" width="250px">
+        </div>
+        <div class="footer-content">
+            <iframe class="footer-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.2929370496495!2d-115.18784298962836!3d36.15942560344437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c3e0f1f3797f%3A0xe9471b8927b99794!2sLaw%20Offices%20Of%20Carol%20Menninger!5e0!3m2!1sen!2str!4v1696091393061!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="footer-contact">
+                <div>
+                    <img class="icon" src="phone-icon.png" alt="Phone Icon" width="30px" >
+                    <a href="tel:+17023841111" style="margin-top:-10px;">+17023841111</a>
+                </div>
+                <div>
+                    <img class="icon" src="email-icon.png" alt="Email Icon" width="30px">
+                    <a href="mailto:example@example.com">example@example.com</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="practiceareas.html">Practice Areas</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // Check if the screen width is below a certain threshold (e.g., 768px for typical mobile devices).
+        if (window.innerWidth <= 768) {
+          // Set a new source for the video.
+          document.getElementById('bgVideo').src = 'mobilebgvid.mp4';
+        } else {
+          // Set the default source for larger screens.
+          document.getElementById('bgVideo').src = 'thebgvideo.mp4';
+        }
+      </script>
+      
+</body>
+</html>

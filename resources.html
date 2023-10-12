@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="resources.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<div class="menuicon"><img src="menuicon.png" alt="" width="50px" onclick="menuopen()"> </div>
+
+        <script>
+ 
+            function menuopen() {
+           document.getElementById("menu").style.height="100%";
+               
+            }
+           function closethemenu() {
+               document.getElementById("menu").style.height="0%";
+           
+           }
+           
+           </script>
+          
+           
+           
+               <div class="mobilemenu" id="menu">
+                   <div class="mobilecontent">
+                       <img src="closeicon.png" alt="" onclick="closethemenu()" id="closeicon" width="30px" style="cursor: pointer;">
+                       <h1 style="color:white; border-bottom: 2px solid white;">The Menu</h1>
+                       <ul>
+                            <li><a href="/previewcarol/index.html">Home</a></li>
+                           <li><a href="practiceareas.html">Practice areas</a></li>
+                           <li><a href="testimonials.html">Testimonials</a></li>
+                           <li><a href="resources.html">Resources</a></li>
+                           <li><a href="about.html">About Us</a></li>
+                           <li><a href="contact.html">Contact</a></li>
+                           <li><a href="mailto:">example@example.com</a></li>
+                           <li><a href="tel:">+17023841111</a></li>
+                           <li><a href="https://www.google.com/maps/place/Law+Offices+Of+Carol+Menninger/@36.1594256,-115.187843,17z/data=!3m1!4b1!4m6!3m5!1s0x80c8c3e0f1f3797f:0xe9471b8927b99794!8m2!3d36.1594213!4d-115.1852627!16s%2Fg%2F11b5pk14fb?entry=ttu">3210 W Charleston Blvd, Las Vegas, NV 89102, United States</a></li>
+                       </ul>
+                   </div>
+               </div>
+</div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="green-logo.png" alt="Logo" width="150px" onclick="location.href='index.html'">
+        </div>
+        <ul class="link-group">
+            <li><a href="practiceareas.html">Practice Areas</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <a class="contact-link" href="#">Contact</a>
+    </div>
+
+    <div class="thepracticeareas">
+        <img src="green-logo-small.png" alt="anan" width="250px" class="titlelogo">
+        <h1>Our Resources</h1>
+        <p>"Our resources are your legal compass in navigating the complexities of the legal landscape."</p>
+        <img src="downarrow.png" alt="down" width="70px"id="down">
+    </div>
+
+
+<style>
+    .menuicon{
+        display: none;
+        cursor: pointer;
+      }
+    @media screen and (max-width:600px) {
+    
+    .menuicon{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+      }
+    
+    .navbar a{
+        display: none;
+    }
+
+    .box-container{
+        display: inline;
+    }
+
+.footer-contact{
+    margin-top: -420px;
+    text-align: left;
+    
+}
+
+
+.footer-iframe{
+    margin-top: 520px;
+}
+
+.footer-links{
+    margin-top: -690px;
+    float:left;
+    text-align: left;
+   
+}
+
+
+}
+.thepracticeareas{
+justify-content: center;
+text-align: center;
+color: #50C878;
+font-family: 'Urbanist', sans-serif;
+margin-bottom: 250px;
+margin-top: 60px;
+}
+
+.thepracticeareas h1{
+font-size: 62px;
+margin-top: 0px;
+text-shadow: 1px;
+}
+
+.thepracticeareas p{
+font-size: 20px;
+margin-bottom: 142px;
+}
+@media screen and (max-width:600px) {
+    .thepracticeareas{
+margin-top: 30px;
+}
+.titlelogo{
+    width: 120px;
+}
+.thepracticeareas p{
+font-size: 20px;
+margin-bottom:30px;
+}
+
+}
+</style>
+    <!-- Resources Page -->
+    <div class="resources">
+     
+        <div class="resource-boxes">
+            <div class="resource-box">
+                <h3 class="resource-title">- Divorce and Custody Guide: Navigating Family Transitions</h3>
+                <p class="resource-text">This comprehensive guide offers valuable insights and practical
+                     advice on handling divorce and custody matters. It covers topics such as legal processes,
+                      co-parenting strategies, and emotional support during family transitions.</p>
+                <a class="download-link" href="#">
+                    <img class="download-icon" src="download-icon.png" alt="Download Icon">
+                </a>
+            </div>
+            <div class="resource-box">
+                <h3 class="resource-title">- Child Support Calculator: Estimate Your Financial Obligations</h3>
+                <p class="resource-text">Our easy-to-use child support calculator helps you estimate your financial
+                     responsibilities accurately. Simply input your financial information, and the calculator will
+                      provide an estimate of child support obligations based on your circumstances.</p>
+                <a class="download-link" href="#">
+                    <img class="download-icon" src="download-icon.png" alt="Download Icon">
+                </a>
+            </div>
+            <div class="resource-box">
+                <h3 class="resource-title">- Legal FAQs: Common Questions in Family Law Matters</h3>
+                <p class="resource-text">Get answers to some of the most common questions related to family law. 
+                    This resource addresses inquiries about divorce, child custody, spousal support, and more. It 
+                    serves as a quick reference for individuals seeking basic information on family legal matters.</p>
+                <a class="download-link" href="#">
+                    <img class="download-icon" src="download-icon.png" alt="Download Icon">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="white-logo.png" alt="Logo" width="250px">
+        </div>
+        <div class="footer-content">
+            <iframe class="footer-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.2929370496495!2d-115.18784298962836!3d36.15942560344437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c3e0f1f3797f%3A0xe9471b8927b99794!2sLaw%20Offices%20Of%20Carol%20Menninger!5e0!3m2!1sen!2str!4v1696091393061!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="footer-contact">
+                <div>
+                    <img class="icon" src="phone-icon.png" alt="Phone Icon" width="30px" >
+                    <a href="tel:+17023841111" style="margin-top:-10px;">+17023841111</a>
+                </div>
+                <div>
+                    <img class="icon" src="email-icon.png" alt="Email Icon" width="30px">
+                    <a href="mailto:example@example.com">example@example.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="practiceareas.html">Practice Areas</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <style>
+        /* Style for the icon when the link is hovered */
+.download-link:hover .download-icon {
+    /* Change the icon source to "white-download.png" on hover */
+    content: url('white-download.png');
+}
+    </style>
+</body>
+</html>

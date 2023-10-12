@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menuicon">
+        <img src="menuicon.png" alt="" width="50px" onclick="menuopen()">
+        </div>
+        <script>
+ 
+            function menuopen() {
+           document.getElementById("menu").style.height="100%";
+               
+            }
+           function closethemenu() {
+               document.getElementById("menu").style.height="0%";
+           
+           }
+           
+           </script>
+           </div>
+           
+           
+           
+               <div class="mobilemenu" id="menu">
+                   <div class="mobilecontent">
+                       <img src="closeicon.png" alt="" onclick="closethemenu()" id="closeicon" width="30px" style="cursor: pointer;">
+                       <h1 style="color:white; border-bottom: 2px solid white;">The Menu</h1>
+                       <ul>
+                        <li><a href="/previewcarol/index.html">Home</a></li>
+                           <li><a href="practiceareas.html">Practice areas</a></li>
+                           <li><a href="testimonials.html">Testimonials</a></li>
+                           <li><a href="resources.html">Resources</a></li>
+                           <li><a href="about.html">About Us</a></li>
+                           <li><a href="contact.html">Contact</a></li>
+                           <li><a href="mailto:">example@example.com</a></li>
+                           <li><a href="tel:">+17023841111</a></li>
+                           <li><a href="https://www.google.com/maps/place/Law+Offices+Of+Carol+Menninger/@36.1594256,-115.187843,17z/data=!3m1!4b1!4m6!3m5!1s0x80c8c3e0f1f3797f:0xe9471b8927b99794!8m2!3d36.1594213!4d-115.1852627!16s%2Fg%2F11b5pk14fb?entry=ttu">3210 W Charleston Blvd, Las Vegas, NV 89102, United States</a></li>
+                       </ul>
+                   </div>
+               </div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="green-logo.png" alt="Logo" width="150px" onclick="location.href='index.html'">
+        </div>
+        <ul class="link-group">
+            <li><a href="practiceareas.html">Practice Areas</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <a class="contact-link" href="contact.html">Contact</a>
+    </div>
+
+
+
+    <div class="contact-form" style="margin-top: 0px;">
+        <h2 class="contact-form-title">Contact Us</h2>
+        <div class="form-container">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name-lastname">Name-Lastname</label>
+                    <input type="text" id="name-lastname" name="name-lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="when-to-contact">When should we get back to you? (optional)</label>
+                    <input type="text" id="when-to-contact" name="when-to-contact">
+                </div>
+                <div class="form-group">
+                    <label for="case">Case</label>
+                    <textarea id="case" name="case" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="white-logo.png" alt="Logo" width="250px">
+        </div>
+        <div class="footer-content">
+            <iframe class="footer-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.2929370496495!2d-115.18784298962836!3d36.15942560344437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c3e0f1f3797f%3A0xe9471b8927b99794!2sLaw%20Offices%20Of%20Carol%20Menninger!5e0!3m2!1sen!2str!4v1696091393061!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="footer-contact">
+                <div>
+                    <img class="icon" src="phone-icon.png" alt="Phone Icon" width="30px" >
+                    <a href="tel:+17023841111" style="margin-top:-10px;">+17023841111</a>
+                </div>
+                <div>
+                    <img class="icon" src="email-icon.png" alt="Email Icon" width="30px">
+                    <a href="mailto:example@example.com">example@example.com</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="practiceareas.html">Practice Areas</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
