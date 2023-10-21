@@ -62,11 +62,14 @@
             border-bottom: 1px solid #50C878;
             margin: 10px 0;
             padding: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
         }
 
         .testimonial-title {
             color: #50C878;
-            text-align: left;
+    
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 10px;
@@ -75,14 +78,13 @@
         .testimonial-text {
             text-align: center;
             font-size: 16px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             color: #50C878;
         }
 
         .testimonial-image {
             width: 150px;
-            float: right;
-            margin-top: -75px;
+           
         }
 
         @media screen and (max-width:600px) {
@@ -92,7 +94,9 @@
             justify-content: center;
         }
 
-
+        .testimonial-text{
+            margin-bottom: 20px;
+        }
         .testimonial-box {
             width: 100%;
             border-top: 1px solid #50C878;
@@ -410,6 +414,15 @@ position: absolute;
     margin-bottom:10px ;
 }
 
+.profilepic{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+    
+}
 
 </style>
 
@@ -417,17 +430,39 @@ position: absolute;
 
     <div class="testimonials-container">
         <div class="testimonial-box">
-            <div class="testimonial-title">Exceptional Service</div>
-            <div class="testimonial-text">"Our lawyer provided exceptional service and resolved my case efficiently."</div>
+            <div class="profilepic"><img src="client.png" alt="" width="150px" id="profilepic"></div>    
+            <div class="testimonial-title">"Incredible Family Lawyer"</div>
+            <div class="testimonial-text">"I was in a complex divorce case and felt overwhelmed by the legal process.
+                 Thankfully, I found an incredible family lawyer who not only provided expert guidance but also offered
+                  emotional support throughout the entire journey. Their dedication, professionalism, and exceptional
+                   communication skills made a significant difference in my case. I highly recommend this lawyer to
+                    anyone seeking compassionate yet assertive representation in family law matters."</div>
             <img src="five-star.png" alt="Five-Star Rating" class="testimonial-image">
         </div>
 
         <div class="testimonial-box">
-            <div class="testimonial-title">Highly recommended!</div>
-            <div class="testimonial-text">"I'm amazed by the expertise and dedication of our attorney. Highly recommended!"</div>
+            <div class="profilepic"><img src="client2.png" alt="" width="150px" id="profilepic"></div>             
+            <div class="testimonial-title">"Seep Understanding of Family Law"</div>
+            <div class="testimonial-text">"I cannot thank my family lawyer enough for the outstanding job they did in 
+                handling my child custody case. Their strategic approach, deep understanding of family law, and 
+                commitment to protecting my child's best interests were truly commendable. They navigated through the
+                 complexities of the legal system with finesse and ensured that my rights as a parent were upheld. I 
+                 am incredibly grateful for their expertise and empathetic approach during such a challenging time."</div>
             <img src="five-star.png" alt="Five-Star Rating" class="testimonial-image">
         </div>
 
+
+        <div class="testimonial-box">
+            <div class="profilepic"><img src="client3.png" alt="" width="150px" id="profilepic"></div>             
+            <div class="testimonial-title">"Clear Communication"</div>
+            <div class="testimonial-text">"Hiring a family lawyer was one of the best decisions I made during my recent
+                 legal dispute. Their extensive knowledge of family law, attention to detail, and proactive approach were
+                  instrumental in securing a favorable outcome for my case. From the initial consultation to the final
+                   resolution, they maintained clear communication and provided valuable guidance at every step. I am
+                    genuinely impressed with their professionalism and would highly recommend their services to anyone
+                     in need of a reliable and skilled family lawyer."</div>
+            <img src="five-star.png" alt="Five-Star Rating" class="testimonial-image">
+        </div>
         <!-- Repeat these divs for additional testimonials -->
     </div>
 
