@@ -472,7 +472,117 @@ position: absolute;
         <!-- Repeat these divs for additional testimonials -->
     </div>
 
+  <div class="contact-form" style="margin-top: 0px;">
+        <h2 class="contact-form-title">Contact Us</h2>
+        <div class="form-container">
+            <form action="sendmail.php" method="post">
+                <div class="form-group">
+                    <label for="name-lastname">Name-Lastname</label>
+                    <input type="text" id="name-lastname" name="name-lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="when-to-contact">When should we get back to you? (optional)</label>
+                    <input type="text" id="when-to-contact" name="when-to-contact">
+                </div>
+                <div class="form-group">
+                    <label for="case">Case</label>
+                    <textarea id="case" name="case" rows="4" name="case" required ></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
 
+<style>
+     .contact-form {
+          margin-top: 500px;
+          background-color: whitesmoke;
+          padding-top: 30px;
+          text-align: center;
+          color: #50C878;
+          
+      }
+
+      /* Style for the contact form title */
+      .contact-form-title {
+          font-size: 36px;
+          margin-bottom: 20px;
+   
+      }
+
+      /* Style for the contact form */
+      .form-container {
+          max-width: 600px;
+          margin: 0 auto;
+          
+
+      }
+
+      .form-group {
+          margin-bottom: 20px;
+      }
+
+      .form-group label {
+          display: block;
+          font-size: 18px;
+          margin-bottom: 10px;
+      }
+
+      .form-group input[type="text"],
+      .form-group input[type="email"],
+      .form-group input[type="tel"],
+      .form-group textarea {
+          width: 70%;
+          padding: 10px;
+          border: none;
+          outline: none;
+          border: 1px solid #50C878;
+          transition: 0.5s;
+          color: #50C878;
+          font-family: 'Urbanist', sans-serif;
+      }
+
+
+      .form-group input:focus,
+      .form-group textarea:focus{
+          background-color: #50C878;
+          color: white;
+      }
+
+      .form-group textarea {
+          resize: vertical;
+          height: 200px;
+          width: 90%;
+      }
+
+      /* Style for the submit button */
+      .submit-button {
+          background-color: #50C878;
+          color: white;
+          padding: 15px 40px;
+          border: none;
+          font-family: 'Urbanist', sans-serif;
+          font-size: 18px;
+          cursor: pointer;
+          border: 1px solid #50C878;
+          transition: 0.5s;
+      }
+
+      .submit-button:hover{
+          background-color: white;
+          color: #50C878;
+      }
+
+</style>
+  
 
     <div class="footer">
         <div class="footer-logo">
